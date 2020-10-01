@@ -20,7 +20,6 @@ def printRepos(user_id):
     git_info = {
         "id": user_id,
         "statusCodeUser": request.status_code,
-        "statusCodeRepo": request2.status_code,
         "repoCount": count,
         "stats": repo_stats
     } 

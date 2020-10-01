@@ -19,9 +19,6 @@ class TestApiRun(unittest.TestCase):
 
     def testStatusCodeUser(self): 
         self.assertEqual(printRepos("allen-best")["statusCodeUser"],200)
-    
-    def testStatusCodeRepo(self): 
-        self.assertEqual(printRepos("allen-best")["statusCodeRepo"],200)
 
     def testRepoCountLength(self): 
         self.assertEqual(printRepos("allen-best")["repoCount"],2)
