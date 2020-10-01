@@ -27,7 +27,7 @@ class TestApiRun(unittest.TestCase):
         self.assertEqual(printRepos("allen-best")["repoCount"],2)
 
     def testCheckFirstRepo(self): 
-        self.assertEqual(printRepos("allen-best")["stats"],{"Repo":"allen-best.github.io", "Commits": 20})
+        self.assertEqual(printRepos("allen-best")["stats"][0],[{"Repo":"allen-best.github.io", "Commits": 20}])
     
 
 if __name__ == '__main__':
